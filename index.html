@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スマート単語帳</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div id="auth-section">
+    <form id="login-form">
+      <input type="email" name="email" placeholder="メールアドレス" required>
+      <input type="password" name="password" placeholder="パスワード" required>
+      <button type="submit">ログイン</button>
+    </form>
+    <button id="google-login">Googleでログイン</button>
+  </div>
+
+  <div id="app-section" style="display:none;">
+    <header>
+      <h1>スマート単語帳</h1>
+    </header>
+
+    <section id="recent-deck"></section>
+
+    <section class="create-section">
+      <h2>新しい単語帳を作成</h2>
+      <input type="text" id="keywords-input" placeholder="キーワードを3つ、カンマ区切りで入力">
+      <button id="create-flashcards">作成</button>
+    </section>
+
+    <section id="flashcards-container" class="flashcards-grid"></section>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
