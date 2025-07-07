@@ -1,6 +1,6 @@
 
-const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY";
-const GEMINI_API_URL = "<https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent>";
+const GEMINI_API_KEY = "AIzaSyAKFFyvFF_wlr86Jzi93hc91U4_my446Ys";
+const GEMINI_API_URL = "<https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent>";
 
 async function generateQuiz(keywords) {
   const prompt = `
